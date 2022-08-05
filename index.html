@@ -2,11 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Field of Dreams—in Jersey?</title>
     <link rel="stylesheet" href="style.css">
  
   <style>
+
+  .story-body {
+    margin: 0 auto;
+    max-width: 790px;
+  }
     
     /* Small devices (tablets, 768px and up) */
     /* @media (min-width: @screen-sm-min) { ... } */
@@ -26,11 +31,12 @@
       padding: 1rem;
     }
 
-    #scrolly__section > * {
-      -webkit-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-    }
+    #scrolly {
+        position: relative;
+        padding: 1rem;
+        width: 100%;
+      }
+
 
     .scrolly__content {
       position: relative;
@@ -51,15 +57,22 @@
 
     .scrolly__chart iframe {
       width: 100%;
-      height: 100%;
+      height: 100%; 
     }
+
+    @media only screen and (min-width: 700px) {
+        #scrolly.side-by-side {
+          display: flex;
+        }
 
     .step {
       margin: 0 auto 2rem auto;
       border: 2px solid white;
       display: flex;
       justify-content: center;
-      align-items: start;      
+      align-items: start;
+      padding-left: 10%;
+      padding-right: 10%;
     }
 
     .step:last-child {
@@ -77,12 +90,12 @@
 
     .step p {
       text-align: center;
-      padding: 1rem;
     }
 
     iframe {
       border: unset;
     }
+
     
   </style>
     </head>
@@ -90,55 +103,78 @@
     <body>
         <div class="section">
             
-    <img src="Citi Field2.svg" width=100% /> 
+    <img src="Citi Field2.svg" width=100% />
             <div class="container content">
     
 
     <center>  
-            <p class="label">Sports</p>
-            <h1 class="title">Field of Dreams—in Jersey?</h1>
-            <p class="subhed">What happens when you don’t live near a baseball field (or farm in Iowa) and most of your friends are at camp for the summer?  Play stickball.</p>
+            <p class="label">SPORTS</p>
+            <h1 class="title">How can you not be romantic about <s>baseball</s> stickball?</h1>
+            <p class="subhed">What do you do when you can't access a baseball field and most of your friends are out of town for the summer?  Play stickball.</p>
             <p class="byline">By <span>Anthony D'Arrigo</span></p>
             <p class="date">August 7, 2022</p>
-
-    <h2>[Intro]</h2> 
-            <p class="article__text">[Whimsical intro to set the scene for the summer of '92]</p>
-
-            <img src="Slide1.PNG" />
-            <p class="image__caption">DiMaggio Park in Paramus, NJ</p>
-                <br></br>
-
-    <h2>[Rules]</h2> 
-            <p class="article__text">[Playfully describe quirky, made-up rules]</p>
-
-
           </center>  
+            <p class="article__text">Stickball is like one-on-one baseball, only the rules, field, and equipment are quirky, random, and subject to change (sometimes as you're playing).  Two outs per inning.  No walks.  No bases. Five, maybe six, innings.  Want to play?  Concrete wall to substitute the catcher and ump is a must; chalk to outline the strike zone after it rains too.  Don't forget your mitt, wood bat, and a few old tennis balls (to dull the bounce off the bat).  Home run distance?  Depends on the field.
+
+            <h2> Field of dreams—in Jersey?</h2>
+            <p class="article__text">On a recent visit to my parents in New Jersey, I thought it would be fun to introduce my boys, 6 and 10, to stickball.  They had just discovered backyard wiffle ball (completely different rules) so the time was right to show them where their Dad spent the summer of '92 playing his favorite childhood "sport."  Like Clark Griswold passing down a family tradition, I built the moment up in my imagination as we walked to the park.  Would my sons fall in love with stickball like I did?  Would neighborhood kids be playing?  Was the strikezone outline still there?</p>
+
+            <p class="article__text">No, no, and no.</p>
+            <br></br>
+            <center>
+
+            <h3>Consider the following visual tour of the park a contrast in perspectives:  the romantic memories of a wistful adult vs the candid observations of an unimpressed 10 year old.</h3> 
+
+          </center>
+
             </p>         
           </div>
         </div>
       </div>
+
 
       <div class="container-fluid" id="root">
         <div class="row justify-content-center" id="scrolly__section">
           <div class="col-4 scrolly__content">
             <div class="step" data-step="1">
               <div class="text-block pa-2">
-                <p class="article__text">[Overlay field]</p>
+                
+                <center>  
+              
+                <img src="Picture1.png" alt="" width=100%>
+                <p class="image__caption">A children's park, not a baseball field.</p>
+              </center> 
+              
               </div>
             </div>
             <div class="step" data-step="2">
               <div class="text-block pa-2">
-                <p class="article__text">[Illustrate what's a single, double, triple, and home run]</p>
+                
+                <center> 
+               
+                  <img src="Picture2.png" alt="" width=100%>
+                  <p class="image__caption">The strikezone is painted over.</p>
+                </center>
+
               </div>            
             </div>
             <div class="step" data-step="3">
               <div class="text-block pa-2">
-                <p class="article__text">[Overlay stickball field dimensions on Citi Field]</p>
-              </div>            
+                <center> 
+                
+                  <img src="Picture3.png" alt="" width=100%>
+                  <p class="image__caption">There was a toddler playground in the outfield?</p>
+                </center>
+              
+                </div>            
             </div>
             <div class="step" data-step="4">
               <div class="text-block pa-2">
-                <p class="article__text">[Contrast]</p>
+                <hr class="line-divider my-5 py-lg-2" />     
+
+            <p class="blockquote font-secondary ">“Dad, why did you stop playing?  Weren't you good enough to play in high school?”</p>
+
+            <hr class="line-divider my-5 py-lg-2" />  
               </div>  
 
             </div>
@@ -160,19 +196,26 @@
     
     <div class="container content">
     
-      <br></br>
-      <br></br>
+ 
       <br></br>
       <br></br>
       <center>   
-        
-        <h2>[End]</h2> 
-    <p class="article__text"><i>Field of Dreams</i> is about what’s unsaid between fathers and sons.  In my case, I’m afraid, this will include the length of my childhood home runs.  Turns out they were much—much—shorter than I imagined.</p>
+
+    <p class="article__text"><i>Field of Dreams</i> is about what’s unsaid between fathers and sons.  In my case, I’m afraid, this will include the distance of my childhood home runs...  
 
     <br></br>
+<center>
+   <img src="Wiffle.png", width=50%>
+   
+   <p class="image__caption">Dimensions of my kids' wiffle ball field</p>
+
+   <br></br>
+   <p class="article__text">...and theirs.</p>
+
       <br></br>
 
-  </div>
+</center>  
+</div>
 
     <!-- This code from here on is derived from the side-by-side code example from the scrollama library which can be found here: https://github.com/russellgoldenberg/scrollama  -->
     <!-- I tweaked the function for handleStepEnter to accomodate the Flourish story! -->

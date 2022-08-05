@@ -139,7 +139,7 @@ img {
     font-family: "Franklin-Light";
     line-height: 1.25;
     color: #666;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 6px;
     text-align: center
 }
@@ -162,7 +162,15 @@ iframe {
     padding-bottom: 24px;
 }
 
-@media (max-width: 1024px) {
+.blockquote {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Franklin-Bold";
+
+@media (max-width: 100%) {
     h1 {
         font-size: 40px;
         line-height: 44px;
